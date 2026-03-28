@@ -21,8 +21,20 @@ padding: 0.5rem 3rem 0.5rem 3rem;
 font-size: 1rem;
 
   }
+  .navbar-collapse {
+  background-color: #fff;  /* or any color you want */
+  padding: 10px;
+}
+@media (max-width: 768px) {
+  .navbar-collapse {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+}
 </style>
-<nav class="navbar navbar-expand-md bg-body-ligth border-bottom sticky-top">
+<nav class="navbar navbar-expand-md bg-body-light border-bottom sticky-top">
   <div class="container-fluid">
     <a class="navbar-brand" href="/listings"><i class="fa-regular fa-compass"></i></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
