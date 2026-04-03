@@ -97,12 +97,13 @@
         </div>
 
         <!-- Delete Button -->
+ <% if(CurrrentUser && CurrrentUser._id.equals(listing.owner._id)) { %>
         <div class="card-footer bg-white border-0 text-end">
           <form action="/listings/<%=listing._id%>/delete/<%= review._id %>?_method=DELETE" method="post">
             <button class="btn btn-sm btn-outline-danger">Delete</button>
           </form>
         </div>
-
+      <% } %>
       </div>
     </div>
 
